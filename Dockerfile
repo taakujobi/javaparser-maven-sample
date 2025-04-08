@@ -1,5 +1,5 @@
 FROM openjdk:8u151-jdk-alpine3.7
-
+#comment
 EXPOSE 8070
 
 ENV APP_HOME /usr/src/app
