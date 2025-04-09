@@ -1,11 +1,11 @@
-FROM maven:3.8.4-openjdk-11-slim AS build
-#comment1
-WORKDIR /app
-
-COPY . /app.jar
-
-ENV NAME World
+FROM openjdk:8u151-jdk-alpine3.7
 
 EXPOSE 8070
+
+ENV APP_HOME /usr/src/app
+
+COPY target/javaparser-maven-sample-1.0-SNAPSHOT.jar $APP_HOME/app.jar
+
+WORKDIR $APP_HOME
 
 ENTRYPOINT exec java -jar app.jar
