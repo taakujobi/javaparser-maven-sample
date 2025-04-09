@@ -6,6 +6,6 @@ COPY javaparser-maven-sample-1.0-SNAPSHOT.jar /app
 
 EXPOSE 8070
 
-COPY .app
+COPY . /app
 
 ENTRYPOINT exec java -jar app.jar
