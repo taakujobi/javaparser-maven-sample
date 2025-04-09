@@ -2,7 +2,7 @@ FROM openjdk:8u151-jdk-alpine3.7
 
 WORKDIR /app
 
-COPY javaparser-maven-sample-1.0-SNAPSHOT.jar./app
+COPY javaparser-maven-sample-1.0-SNAPSHOT.jar /app
 
 EXPOSE 8070
 
