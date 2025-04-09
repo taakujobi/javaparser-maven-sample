@@ -4,7 +4,7 @@ EXPOSE 8070
 
 ENV APP_HOME /usr/src/app
 
-COPY target/javaparser-maven-sample-1.0-SNAPSHOT.jar $APP_HOME/app.jar
+COPY target/maven-status/javaparser-maven-sample-1.0-SNAPSHOT.jar $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
 
