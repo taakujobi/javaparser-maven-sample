@@ -19,10 +19,10 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-          cache: 'mvn'
+          cache: maven
 
       - name: Install dependencies
-        run: mvn install
+        run: maven install
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
