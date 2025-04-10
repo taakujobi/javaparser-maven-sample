@@ -6,7 +6,7 @@ EXPOSE 8070
 
 ENV APP_HOME /usr/src/app
 # Copy the built JAR file from the previous stage to the container
-COPY target/javaparser-maven-sample-1.0-SNAPSHOT.jar /app ./
+COPY target/javaparser-maven-sample-1.0-SNAPSHOT.jar $APP_HOME/app.jar
 
 WORKDIR $APP_HOME
 # Set the command to run the application
