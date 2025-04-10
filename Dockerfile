@@ -10,4 +10,4 @@ COPY - from=build . target/javaparser-maven-sample-1.0-SNAPSHOT.jar /app ./
 
 WORKDIR $APP_HOME
 # Set the command to run the application
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT exec java -jar app.jar
