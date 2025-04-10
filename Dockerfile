@@ -8,7 +8,7 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 # Build the application using Maven
-RUN mvn clean package -DskipTests
+RUN mvn -B package --file pom.xml
 # Use an official OpenJDK image as the base image
 FROM openjdk:11-jre-slim
 # Copy the built JAR file from the previous stage to the container
