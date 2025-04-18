@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Release Tag workflow begins
+      #Release Tag workflow begins
       - name: Setup git user
         run: |
           git config user.name "github-actions"
